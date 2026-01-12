@@ -18,12 +18,27 @@
     --radius: 0.5rem;
     --height-navbar: 3.5rem;
 
-    --primary: #123524;
-    --secondary: #118b50;
-    --foreground: #212121;
-    --background: #f2f2f2;
-    --input: #e1e1e1;
-    --border: #bfbfbf;
+    --primary: #4f6d7a;
+    --secondary: #c0d6df;
+    --background: #f7f9fb;
+    --foreground: #1f2933;
+    --accent: #4caf50;
+    --card: #ffffff;
+    --input: #e1e8ed;
+    --border: #c0d6df;
+    --muted-foreground: #657786;
+  }
+
+  .dark {
+    --background: #0f172a;
+    --card: #1e293b;
+    --primary: #38bdf8;
+    --foreground: #e5e7eb;
+    --secondary: #334155;
+    --accent: #10b981;
+    --input: #1e293b;
+    --border: #334155;
+    --muted-foreground: #94a3b8;
   }
 
   *,
@@ -157,3 +172,31 @@
   border-radius: 9999px;
 }
 /* END SCROLBAR */
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 600ms;
+  animation-timing-function: ease-in-out;
+}
+
+/* AKTIF hanya saat theme toggle */
+html[data-theme-transition="true"]::view-transition-new(root) {
+  clip-path: circle(0% at var(--vt-x) var(--vt-y));
+  animation: reveal 1000ms ease-in-out;
+}
+
+html[data-theme-transition="true"]::view-transition-old(root) {
+  animation: hide 1000ms ease-in-out;
+}
+
+@keyframes reveal {
+  to {
+    clip-path: circle(150% at var(--vt-x) var(--vt-y));
+  }
+}
+
+@keyframes hide {
+  to {
+    clip-path: circle(0% at var(--vt-x) var(--vt-y));
+  }
+}

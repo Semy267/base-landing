@@ -70,7 +70,8 @@ declare type CFormSingle = CFormBase & {
 declare type CRadioFormProps = CFormSingle | CFormWithOpt;
 declare type CCheckboxFormProps = CFormSingle | CFormWithOpt;
 
-declare interface ITextArea {
+declare interface ITextArea
+  extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
   value: string;
   placeholder?: string;
   className?: string;

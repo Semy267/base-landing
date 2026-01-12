@@ -7,6 +7,7 @@ all notable changes to this project will be documented in this file.
 - feat: update vuln lib
 - (Refactor) - Make cradio and cchecbox more flexible to customize
 - (Feat) - Adding cswitcher component
+- (Fix) - update todoService
 
 # [0.1.0] - 2025-07-12
 
