@@ -6,6 +6,7 @@ all notable changes to this project will be documented in this file.
 
 - (Fix) - remove todoService
 - (feat) - add react query, sonner, next theme, and update ui
+- (feat) - add socket provider
 
 # [0.1.0] - 2025-07-13
 
