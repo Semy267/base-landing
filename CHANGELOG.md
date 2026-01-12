@@ -2,12 +2,16 @@
 
 all notable changes to this project will be documented in this file.
 
+# [0.1.1] - 2026-01-12
+
+- (Fix) - remove todoService
+- (feat) - add react query, sonner, next theme, and update ui
+
 # [0.1.0] - 2025-07-13
 
 - feat: update vuln lib
 - (Refactor) - Make cradio and cchecbox more flexible to customize
 - (Feat) - Adding cswitcher component
-- (Fix) - update todoService
 
 # [0.1.0] - 2025-07-12
 

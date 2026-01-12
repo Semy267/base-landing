@@ -18,15 +18,15 @@
     --radius: 0.5rem;
     --height-navbar: 3.5rem;
 
-    --primary: #4f6d7a;
-    --secondary: #c0d6df;
-    --background: #f7f9fb;
-    --foreground: #1f2933;
-    --accent: #4caf50;
-    --card: #ffffff;
-    --input: #e1e8ed;
-    --border: #c0d6df;
-    --muted-foreground: #657786;
+    --primary: #3b82f6;
+    --secondary: #f3f4f6;
+    --background: #ffffff;
+    --foreground: #111827;
+    --accent: #10b981;
+    --card: #fafafa;
+    --input: #f3f4f6;
+    --border: #e5e7eb;
+    --muted-foreground: #6b7280;
   }
 
   .dark {
